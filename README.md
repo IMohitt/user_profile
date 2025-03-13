@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# React Native User App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+This is a simple React Native application that fetches and displays user data from the Random Data API. The app allows users to navigate through different user profiles using a "Next" and "Previous" button.
 
-1. Install dependencies
+## Features
 
-   ```bash
+- Fetches 80 random user profiles from an API.
+- Displays user details including avatar, name, email, and other credentials.
+- Navigation between users using buttons.
+- Responsive UI with Tailwind CSS styling.
+
+## Installation & Setup
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js and npm
+- React Native CLI
+- Expo CLI (if using Expo for development)
+
+### Steps to Run Locally
+
+1. Clone the repository:
+   ```sh
+   git clone <your-repo-link>
+   cd react-native-user-app
+   ```
+2. Install dependencies:
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Start the development server:
+   ```sh
+   npx expo start
    ```
+4. Scan the QR code with the Expo Go app (for Android/iOS) or run it on an emulator.
 
-In the output, you'll find options to open the app in a
+## API Used
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+This application fetches user data from the following API:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+https://random-data-api.com/api/users/random_user?size=80
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Notes
 
-## Learn more
+- The app uses Tailwind CSS classes for styling.
+- Avatar images might take time to load due to API response speed.
+- Ensure you have a stable internet connection for fetching data.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Contributing
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Feel free to submit issues or pull requests to improve the project.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+This project is licensed under the MIT License.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
